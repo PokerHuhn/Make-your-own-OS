@@ -1,0 +1,9 @@
+//hier ist noch nichts außer ein kleiner Template. Die anderen Templates findest du im Template Ordner. im unteren Code musst du die Schrägstriche // entfernen, um den Code wirksam zu machen.
+
+//set graphics mode
+//cursor-ico("cursor.png")
+
+//clear screen with color 15
+
+//enable mouse
+//stop

@@ -1,0 +1,28 @@
+
+set graphics mode
+cursor-ico("cursor.png")
+
+clear screen with color 3
+
+// --- DIE TASKLEISTE UNTEN (bleibt fest) ---
+draw window at 0, 175 with size 320, 25 color 7    
+draw window at 0, 174 with size 320, 2 color 15
+draw window at 0, 198 with size 320, 1 color 8
+draw window at 0, 199 with size 320, 1 color 0  
+
+// --- EIN ECHTES FENSTER MIT RAHMEN (als verschiebbar definiert) ---
+// 1. Der dunkle Außenrahmen
+draw window at 58, 48 with size 204, 105 color 0 movable
+draw window at 58, 48 with size 204, 104 color 8 movable
+
+// 2. Der helle innere Rahmen (Silber-Look)
+draw window at 59, 49 with size 202, 102 color 7 movable
+// 3. Der eigentliche Fensterinhalt (hellgrau)
+draw window at 60, 64 with size 200, 87 color 7 movable
+// 4. Die blaue Titelleiste
+draw window at 60, 50 with size 200, 14 color 1 movable
+// 5. Die weiße Glanzkante unter der Titelleiste
+draw window at 60, 63 with size 200, 1 color 15 movable
+
+enable mouse
+stop
